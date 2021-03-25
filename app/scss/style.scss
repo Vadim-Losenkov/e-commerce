@@ -50,11 +50,14 @@
       @extend %img;
       background-size: contain;
     }
+    &.mobile {
+      display: none;
+    }
   }
   &__top-search {
+    position: relative;
     max-width: 700px;
     width: 100%;
-    position: relative;
     input {
       width: 100%;
       border: none;
@@ -397,3 +400,5 @@
     margin-left: 8px;
   }
 }
+
+@import "media";
