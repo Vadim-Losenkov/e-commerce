@@ -38,6 +38,8 @@ body {
   color: #ffffff;
   font-family: 'MuseoModerno', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  min-width: 1500px;
+  overflow-x: hidden;
 }
 
 .container{
@@ -72,7 +74,8 @@ body {
 }
 
 .top__wrapper {
-  background-color: #41538f;
+  background-image: url('../images/top-bg.jpg');
+  @extend %bgi;
   padding: 40px 0;
   padding-bottom: 100px;
 }

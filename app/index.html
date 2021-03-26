@@ -22,16 +22,28 @@
                 <img src="images/icons/search.svg" alt="">
               </a>
             </div>
-            <a href="#" class="header__top-user">
-              <img src="images/icons/user.svg" alt="">
-            </a>
-            <a href="#" class="header__top-cart">Товаров 0 (0р.)</a>
-            <a href="#" class="header__top-cart mobile"></a>
+            <div class="header__top-box">
+              <a href="#" class="header__top-user">
+                <img src="images/icons/user.svg" alt="">
+              </a>
+              <a href="#" class="header__top-cart">Товаров 0 (0р.)</a>
+              <a href="#" class="header__top-cart mobile"></a>
+            </div>
           </div>
         </div>
       </div>
+      <div class="header__top-search mobile">
+        <input type="text" class="header__top-input" placeholder="Поиск по сайту...">
+        <a href="#" class="header__top-input__btn">
+          <img src="images/icons/search.svg" alt="">
+        </a>
+      </div>
       <nav class="header__nav">
         <div class="container">
+          <div class="header__nav-menu">
+            <span>Меню</span>
+            <img class="header__nav-menu--arrow" src="images/icons/angle-down.svg" alt="">
+          </div>
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
             <li class="header__nav-item"><a href="#" class="header__nav-link">FAQ</a></li>
@@ -61,7 +73,8 @@
                   </div>
                 </div>
                 <div class="top__slider-img">
-                  <img src="images/slider-img.jpg" alt="slider image">
+                  <img class="top__slider-bg" src="images/slider-image-bg.svg" alt="slider image">
+                  <img class="top__slider-main" src="images/slider-image.jpg" alt="slider image">
                 </div>
               </div>
             </div>
@@ -81,7 +94,8 @@
                   </div>
                 </div>
                 <div class="top__slider-img">
-                  <img src="images/slider-img.jpg" alt="slider image">
+                  <img class="top__slider-bg" src="images/slider-image-bg.svg" alt="slider image">
+                  <img class="top__slider-main" src="images/slider-image.jpg" alt="slider image">
                 </div>
               </div>
             </div>
@@ -101,7 +115,8 @@
                   </div>
                 </div>
                 <div class="top__slider-img">
-                  <img src="images/slider-img.jpg" alt="slider image">
+                  <img class="top__slider-bg" src="images/slider-image-bg.svg" alt="slider image">
+                  <img class="top__slider-main" src="images/slider-image.jpg" alt="slider image">
                 </div>
               </div>
             </div>
@@ -192,7 +207,7 @@
         <div class="about__info">
           <div class="about__info-item">
             <div class="about__info-img">
-              <img src="images/about-1.svg" alt="clock img">
+              <img src="images/icons/clock.svg" alt="clock img">
             </div>
             <div class="about__info-text">
               опыт работы 10 лет
@@ -200,7 +215,7 @@
           </div>
           <div class="about__info-item">
             <div class="about__info-img">
-              <img src="images/about-1.svg" alt="clock img">
+              <img src="images/icons/clock.svg" alt="clock img">
             </div>
             <div class="about__info-text">
               опыт работы 10 лет
@@ -208,7 +223,7 @@
           </div>
           <div class="about__info-item white">
             <div class="about__info-img">
-              <img src="images/about-1.svg" alt="clock img">
+              <img src="images/icons/clock-blue.svg" alt="clock img">
             </div>
             <div class="about__info-text">
               опыт работы 10 лет
@@ -216,7 +231,7 @@
           </div>
           <div class="about__info-item">
             <div class="about__info-img">
-              <img src="images/about-1.svg" alt="clock img">
+              <img src="images/icons/clock.svg" alt="clock img">
             </div>
             <div class="about__info-text">
               опыт работы 10 лет
@@ -301,6 +316,7 @@
       </div>
     </div>
   </section>
+  
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -317,12 +333,16 @@
             Мы в соц сетях
           </div>
           <div class="footer__social-list">
-            <div class="footer__social-item"><a href="#" class="footer__social-link vk"></a></div>
-            <div class="footer__social-item"><a href="#" class="footer__social-link facebook"></a></div>
-            <div class="footer__social-item"><a href="#" class="footer__social-link instagram"></a></div>
-            <div class="footer__social-item"><a href="#" class="footer__social-link twitter"></a></div>
-            <div class="footer__social-item"><a href="#" class="footer__social-link youtube"></a></div>
-            <div class="footer__social-item"><a href="#" class="footer__social-link telegram"></a></div>
+            <div class="footer__social-box">
+              <div class="footer__social-item"><a href="#" class="footer__social-link vk"></a></div>
+              <div class="footer__social-item"><a href="#" class="footer__social-link facebook"></a></div>
+              <div class="footer__social-item"><a href="#" class="footer__social-link instagram"></a></div>
+            </div>
+            <div class="footer__social-box">
+              <div class="footer__social-item"><a href="#" class="footer__social-link twitter"></a></div>
+              <div class="footer__social-item"><a href="#" class="footer__social-link youtube"></a></div>
+              <div class="footer__social-item"><a href="#" class="footer__social-link telegram"></a></div>
+            </div>
           </div>
         </div>
       </div>
