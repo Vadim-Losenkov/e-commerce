@@ -1,19 +1,19 @@
-@media (max-width: 1300px) {
+@media (max-width: 1410px) {
   .header__top-search {
     max-width: 600px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1310px) {
   .header__top-search {
     max-width: 500px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1210px) {
   .header__top-search {
     max-width: 400px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1110px) {
   .header__top-cart {
     display: none;
   }
@@ -26,6 +26,9 @@
       transform: translate(-50%, -50%);
     }
   }
+}
+@media (max-width: 1000px) {
+  
 }
 @media (max-width: 800px) {
   .header__top-inner {

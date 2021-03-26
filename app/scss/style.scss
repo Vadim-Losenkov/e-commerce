@@ -8,7 +8,7 @@
   &__top-inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   &__top-search {
     margin-right: 60px;
@@ -29,7 +29,7 @@
   }
   &__top-box {
     display: flex;
-    width: 100%;
+    width: 315px;
   }
   &__top-cart {
     padding: 10px 30px;
@@ -136,7 +136,6 @@
   }
   
   &__slider {
-    //padding-bottom: 30px;
     padding-bottom: 50px;
   }
   &__slider-img {
@@ -148,7 +147,7 @@
   }
   &__slider-main {
     position: absolute;
-    top: 15px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -228,6 +227,14 @@
     bottom: 25px;
     line-height: 24px;
   }
+  &__item-img img {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  &__item-img.center img {
+    left: 50%;
+  }
 }
 
 .about {
@@ -267,13 +274,16 @@
     }
   }
   &__info-img {
-    margin-bottom: 25px;
-    
-    img {
-      width: 70px;
-      height: 70px;
-      z-index: 100;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    margin: 0 auto;
+  }
+  &__info-text {
+    margin-top: 25px;
   }
 }
 
@@ -476,4 +486,34 @@
   }
 }
 
-// @import "media";
+.breadcrumbs {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    a {
+      padding-right: 20px;
+      margin-right: 6px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../images/icons/angle-right.svg');
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    font-size: 14px;
+    color: #14171e;
+  }
+}
+
+@import "media";
