@@ -560,8 +560,10 @@
 .catalog {
   color: #14171e;
   width: 100%;
-  margin-bottom: 50px;
   
+  &-wrapper {
+    margin-bottom: 50px;
+  }
   &-wrapper__inner {
     display: flex;
   }
@@ -580,10 +582,37 @@
       width: 40px;
       height: 30px;
       background-color: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      &:last-child {
+        padding-top: 4px;
+        align-items: start;
+      }
     }
   }
   &__filter-dropdowns {
     display: flex;
+  }
+  &__filter-dropdown {
+    display: flex;
+    span {
+      margin-right: 10px;
+    }
+    .dropdown {
+      width: 170px;
+      height: 30px;
+      border: 1px solid #cad5eb;
+      margin-right: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 0 10px;
+    }
   }
   &__filter-link {
     color: $blue;
@@ -608,7 +637,7 @@
     padding: 30px;
     border: 1px solid  #cad5eb;
     max-width: 310px;
-    padding-top: 280px;
+    z-index: 0;
   }
   &__item-title {
     font-size: 22px;
@@ -636,10 +665,40 @@
   }
   &__item-like {
     border-right: 1px solid  #cad5eb;
-    width: 52px;
+    width: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img.default {
+      display: block;
+      width: 28px;
+      height: 28px;
+    }
+    img.active {
+      display: none;
+      width: 28px;
+      height: 28px;
+    }
+  }
+  &__item-like.active {
+    img.active {
+      display: block;
+    }
+    img.default {
+      display: none;
+    }
   }
   &__item-change {
     width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 28px;
+      height: 28px;
+    }
   }
   &__item-buy {
     font-size: 20px;
