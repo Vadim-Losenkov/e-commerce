@@ -21,6 +21,12 @@ $(function() {
     $(this).toggleClass('active')
   })
 
+  $('.faq__name').on('click', function() {
+    $(this).toggleClass('open')
+    $(this).siblings().slideToggle(300)
+  })
 })
 
-const tabs = new Tabs('[data-menu="menu"]', '[data-menu="items"]')
+new Tabs('[data-menu="menu"]', '[data-menu="items"]')
+new Tabs('[data-menu="product-menu-img"]', '[data-menu="product-items-img"]')
+new Tabs('[data-menu="product-menu-tabs"]', '[data-menu="product-items-tabs"]')

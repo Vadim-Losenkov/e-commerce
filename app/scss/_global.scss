@@ -1,4 +1,4 @@
-html{
+html {
   box-sizing: border-box;
 }
 
@@ -19,7 +19,8 @@ p {
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -36,19 +37,18 @@ body {
   font-size: 17px;
   line-height: 30px;
   color: #ffffff;
-  font-family: 'MuseoModerno', Arial, Helvetica, sans-serif;
+  font-family: "MuseoModerno", Arial, Helvetica, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
-  min-width: 1920px;
 }
 
-.container{
+.container {
   max-width: 1410px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.container-fluid{
+.container-fluid {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -61,7 +61,8 @@ body {
   position: relative;
   margin-bottom: 30px;
   margin-left: 65px;
-  
+  font-weight: 700;
+
   &::before {
     content: "";
     position: absolute;
@@ -74,7 +75,7 @@ body {
 }
 
 .top__wrapper {
-  background-image: url('../images/top-bg.jpg');
+  background-image: url("../images/top-bg.jpg");
   @extend %bgi;
   padding: 40px 0;
   padding-bottom: 100px;

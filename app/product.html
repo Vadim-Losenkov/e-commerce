@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -154,32 +154,37 @@
           <div class="product__inner">
             <div class="product-main">
               <div class="product-main__images">
-                <div class="product-main__images-main">
-                  <img src="images/Layer 56.png" alt="">
-                </div>
-                <div class="product-main__images-secondary">
-                  <div class="product-main__images-box open">
+                <div class="product-main__images-main" data-menu="product-items-img">
+                  <div class="product-main__images-wrapper open" data-item="1">
                     <img src="images/Layer 56.png" alt="">
                   </div>
-                  <div class="product-main__images-box">
+                  <div class="product-main__images-wrapper" data-item="2">
+                    <img src="images/Layer 56.png" alt="">
+                  </div>
+                </div>
+                <div class="product-main__images-secondary" data-menu="product-menu-img">
+                  <div class="product-main__images-box open" data-id="1">
+                    <img src="images/Layer 56.png" alt="">
+                  </div>
+                  <div class="product-main__images-box" data-id="2">
                     <img src="images/Layer 56.png" alt="">
                   </div>
                 </div>
               </div>
               <div class="product-main__tabs">
-                <div class="product-main__tabs-menu">
-                  <div class="product-main__tabs-button active">
+                <div class="product-main__tabs-menu" data-menu="product-menu-tabs">
+                  <div class="product-main__tabs-button open" data-id="1">
                     Описание
                   </div>
-                  <div class="product-main__tabs-button">
+                  <div class="product-main__tabs-button" data-id="2">
                     Отзывов (<span>0</span>)
                   </div>
                 </div>
-                <div class="product-main__tabs-items">
-                  <div class="product-main__tabs-item">
+                <div class="product-main__tabs-items" data-menu="product-items-tabs">
+                  <div class="product-main__tabs-item open" data-item="1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quas alias totam porro, quisquam asperiores aut laborum iure. Unde libero alias aut, suscipit animi accusamus cum. Harum, numquam eum voluptatibus.
                   </div>
-                  <div class="product-main__tabs-item">
+                  <div class="product-main__tabs-item" data-item="2">
                     Отзывов нет
                   </div>
                 </div>
@@ -376,6 +381,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/tabson.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

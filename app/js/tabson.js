@@ -22,8 +22,8 @@ class Tabs {
   }
   
   close() {
-    const menuList = document.querySelectorAll('[data-id]')
-    const itemsList = document.querySelectorAll('[data-item]')
+    const menuList = this.$menu.querySelectorAll('[data-id]')
+    const itemsList = this.$items.querySelectorAll('[data-item]')
     
     menuList.forEach($el => $el.classList.remove('open'))
     itemsList.forEach($el => $el.classList.remove('open'))
