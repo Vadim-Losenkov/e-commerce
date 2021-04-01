@@ -27,6 +27,20 @@ $(function() {
   })
 })
 
-new Tabs('[data-menu="menu"]', '[data-menu="items"]')
-new Tabs('[data-menu="product-menu-img"]', '[data-menu="product-items-img"]')
-new Tabs('[data-menu="product-menu-tabs"]', '[data-menu="product-items-tabs"]')
+try {
+  new Tabs('[data-menu="menu"]', '[data-menu="items"]')
+} catch(e) {
+  try {
+    new Tabs('[data-menu="product-menu-img"]', '[data-menu="product-items-img"]')
+  } catch(e) { 
+    console.log(e);
+  } finally {
+    try {
+      new Tabs('[data-menu="product-menu-tabs"]', '[data-menu="product-items-tabs"]')
+    } catch (e) {
+      console.log(e);
+    } finally {
+      new Tabs('[data-menu="contacts-menu"]', '[data-menu="contacts-items"]')
+    }
+  }
+}
