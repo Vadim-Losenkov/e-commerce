@@ -138,11 +138,14 @@
   &__slider {
     padding-bottom: 50px;
   }
+  &__slider-item {
+    padding: 0 15px;
+  }
   &__slider-img {
     position: relative;
   }
   &__slider-bg {
-    width: 100%;
+    width: 472px;
     height: 100%;
   }
   &__slider-main {
@@ -204,14 +207,15 @@
 
   &__inner {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__item {
     background-color: $orange;
     width: 320px;
     height: 215px;
+    margin: 0 15px;
     margin-bottom: 30px;
     padding: 25px;
     position: relative;
@@ -260,6 +264,7 @@
   &__info {
     display: flex;
     flex-wrap: wrap;
+    max-width: 500px;
   }
 
   &__info-item {
@@ -560,6 +565,7 @@
 .catalog {
   color: #14171e;
   width: 100%;
+  overflow-x: hidden;
 
   &-wrapper {
     margin-bottom: 50px;
@@ -574,6 +580,8 @@
     width: 100%;
     margin-left: 40px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding-right: 100px;
   }
   &__filter-buttons {
     display: flex;
@@ -598,6 +606,7 @@
   }
   &__filter-dropdowns {
     display: flex;
+    flex-wrap: wrap;
   }
   &__filter-dropdown {
     display: flex;
@@ -612,6 +621,7 @@
       font-size: 12px;
       font-weight: 700;
       padding: 0 10px;
+      margin-bottom: 12px;
     }
   }
   &__filter-link {
@@ -755,6 +765,7 @@
 .product__inner {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .product-main {
@@ -926,6 +937,7 @@
   margin-bottom: 150px;
   &__inner {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .title {
@@ -948,7 +960,6 @@
 
   &__name {
     font-size: 18px;
-    line-height: 35px;
     color: #fff;
     width: 100%;
     min-height: 60px;
@@ -993,8 +1004,174 @@
 
 .contacts {
   color: #000;
+  margin-bottom: 150px;
   &__title {
     color: $blue;
+    margin-top: 40px;
+  }
+  
+  &__menu {
+    margin-left: 15px;
+  }
+  &__menu-btn {
+    border-radius: 30px;
+    background-color: $blue;
+    padding: 8px 20px;
+    color: #fff;
+    &.active {
+      background-color: $orange;
+    }
+  }
+  &__menu-btn + &__menu-btn {
+    margin-left: 10px;
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__item-content {
+    max-width: 370px;
+    width: 100%;
+  }
+  &__item-title {
+    font-size: 22px;
+    color: $blue;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .item {
+    padding-left: 70px;
+    min-height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #181818;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $orange;
+    }
+  }
+  .link {
+    font-size: 20px;
+    color: #003399;
+    text-decoration: underline;
+  }
+  
+  &__item-phone {
+    &__title {
+      font-size: 11px;
+      color: #000;
+    }
+    &__number {
+      font-size: 25px;
+      color: #003399;
+      font-weight: 700;
+    }
+  }
+  &__item-map {
+    max-width: 650px;
+    width: 100%;
+    background-color: #ccc;
+  }
+  
+  &__item-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  &__item-image img {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+.service {
+  margin-bottom: 100px;
+  &__title {
+    color: $blue;
+  }
+  &__block {
+    font-size: 15px;
+    color: #101b3a;
+  }
+  &__block-item {
+    margin-bottom: 15px;
+    width: 100%;
+    &-box {
+      display: flex;
+      &.mobile {
+        display: none;
+      }
+    }
+    &.header {
+      color: #101b3a;
+      font-weight: 700;
+      display: flex;
+      .service__block-box {
+        border: none;
+      }
+      .first {
+        background-color: #d8eafc;
+        &.serv {
+          color: #101b3a;
+          font-weight: 700;
+        }
+      }
+      .second {
+        background-color: #e3f1ff;
+        justify-content: center;
+      }
+      .last {
+        background-color: #ebf5ff;
+      }
+    }
+  }
+  
+  &__block-box {
+    border: 1px solid #cad5eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    padding: 20px;
+    &.serv {
+      font-size: 15px;
+      color: #003399;
+      max-width: 300px;
+      width: 100%;
+    }
+    &.price {
+      font-size: 20px;
+      color: #101b3a;
+      font-weight: 700;
+      max-width: 200px;
+      width: 100%;
+    }
+    &.middle {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  
+  &__block-text {
+    max-width: 600px;
   }
 }
 

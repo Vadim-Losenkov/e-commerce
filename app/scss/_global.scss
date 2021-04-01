@@ -40,6 +40,9 @@ body {
   font-family: "MuseoModerno", Arial, Helvetica, sans-serif;
   font-weight: 500;
   overflow-x: hidden;
+  
+  max-width: 320px;
+  // min-width: 400px;
 }
 
 .container {
@@ -62,6 +65,7 @@ body {
   margin-bottom: 30px;
   margin-left: 65px;
   font-weight: 700;
+  margin-top: 40px;
 
   &::before {
     content: "";
@@ -74,12 +78,21 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .title {
+    margin-left: 10px;
+  }
+}
+
+.services__title.service-page {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 .top__wrapper {
   background-image: url("../images/top-bg.jpg");
   @extend %bgi;
   padding: 40px 0;
   padding-bottom: 100px;
-}
-.content- {
-  margin: 800px 0;
 }
